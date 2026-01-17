@@ -96,6 +96,14 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
+          <!-- ===== CATEGORIES AT BOTTOM ===== -->
+          <div class="footer-categories">
+            {% for category in site.categories %}
+              <span class="category-badge">
+                {{ category[0] }} ({{ category[1].size }})
+              </span>
+            {% endfor %}
+          </div>
           {% include svg-icons.html %}
         </footer>
       </div>

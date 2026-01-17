@@ -287,7 +287,8 @@ footer {
 
 .dropbtn {
   cursor: pointer;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .dropdown-content {
@@ -349,7 +350,8 @@ footer {
 nav.main-nav {
   clear: both;          /* ⬅️ QUAN TRỌNG */
   width: 100%;
-  margin-top: 12px;
+  margin-top: 20px;
+  font-size: 14px;
   justify-content: flex-start;
 }
 
@@ -381,6 +383,25 @@ nav.main-nav {
 
 .masthead .site-search {
   margin-top: 8px;
+}
+
+/* ===== FOOTER CATEGORY LABELS ===== */
+
+.footer-categories {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.category-badge {
+  display: inline-block;
+  margin: 5px 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  color: #333;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
