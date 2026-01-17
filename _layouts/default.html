@@ -39,6 +39,7 @@
               id="search-input"
               placeholder="Search..."
             />
+            <div id="search-results"></div>
           </div>
 
         </header>
@@ -63,8 +64,11 @@
     <script>
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
-        resultsContainer: document.createElement('div'),
-        json: '{{ site.baseurl }}/search.json'
+        resultsContainer: document.getElementById('search-results'),
+        json: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10
       });
     </script>
   </body>
