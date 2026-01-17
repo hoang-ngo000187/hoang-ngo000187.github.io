@@ -51,6 +51,28 @@
               </div>
             </div>
 
+            <!-- Data Structures and Algorithms -->
+            <div class="dropdown">
+              <span class="dropbtn">Data Structures and Algorithms ▾</span>
+              <div class="dropdown-content">
+                {% assign dsa_posts = site.categories.dsa %}
+                {% for post in dsa_posts %}
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+
+            <!-- Embedded Linux -->
+            <div class="dropdown">
+              <span class="dropbtn">Embedded Linux ▾</span>
+              <div class="dropdown-content">
+                {% assign linux_posts = site.categories.linux %}
+                {% for post in linux_posts %}
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+
           </nav>
 
           <!-- 🔍 SEARCH BAR (THÊM Ở ĐÂY) -->
