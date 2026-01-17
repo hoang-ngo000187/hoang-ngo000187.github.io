@@ -30,6 +30,29 @@
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
             <a href="{{ site.baseurl }}/categories">Categories</a>
+
+            <!-- RTOS -->
+            <div class="dropdown">
+              <span class="dropbtn">Real-Time Operating System ▾</span>
+              <div class="dropdown-content">
+                {% assign rtos_posts = site.categories.rtos %}
+                {% for post in rtos_posts %}
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+
+            <!-- STM32 Driver -->
+            <div class="dropdown">
+              <span class="dropbtn">STM32 Driver Development ▾</span>
+              <div class="dropdown-content">
+                {% assign stm32_posts = site.categories.stm32_driver %}
+                {% for post in stm32_posts %}
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+            
           </nav>
 
           <!-- 🔍 SEARCH BAR (THÊM Ở ĐÂY) -->
