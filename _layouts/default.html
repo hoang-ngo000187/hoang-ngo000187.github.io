@@ -31,6 +31,16 @@
             <a href="{{ site.baseurl }}/about">About</a>
             <a href="{{ site.baseurl }}/categories">Categories</a>
           </nav>
+
+          <!-- 🔍 SEARCH BAR (THÊM Ở ĐÂY) -->
+          <div class="site-search">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search..."
+            />
+          </div>
+
         </header>
       </div>
     </div>
@@ -48,5 +58,14 @@
     </div>
 
     {% include analytics.html %}
+    <!-- 🔍 SEARCH SCRIPT -->
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.createElement('div'),
+        json: '{{ site.baseurl }}/search.json'
+      });
+    </script>
   </body>
 </html>
