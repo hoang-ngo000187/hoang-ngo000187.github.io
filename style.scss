@@ -318,6 +318,28 @@ footer {
   display: block;
 }
 
+.site-header,
+.page-header {
+  display: flex;
+  flex-wrap: wrap;      /* QUAN TRỌNG */
+  align-items: center;
+}
+
+.site-title {
+  max-width: 100%;
+  white-space: normal;  /* Cho phép xuống dòng */
+}
+
+.site-nav {
+  flex: 1 1 auto;
+}
+
+.site-search,
+.search-container,
+.search-box {
+  max-width: 100%;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
