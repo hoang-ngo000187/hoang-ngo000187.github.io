@@ -210,31 +210,23 @@ img {
   }
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+nav.main-nav {
+  display: flex;
+  flex-wrap: wrap;              // ⭐ cho phép xuống dòng
+  justify-content: flex-end;    // dạt về phải (như hiện tại)
+  align-items: center;
+  gap: 18px;                    // khoảng cách đều
+  margin-top: 23px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+    justify-content: center;
+    margin-top: 10px;
   }
+}
 
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
+nav.main-nav > a,
+nav.main-nav .dropbtn {
+  white-space: nowrap;          // không vỡ chữ
 }
 
 //
