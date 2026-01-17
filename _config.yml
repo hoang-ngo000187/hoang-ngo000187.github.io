@@ -9,7 +9,7 @@ name: Hoang Ngo | Learning Notes 🎮
 description: 💻 Embedded programming, software development, and hands-on experience
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ./avatar.png
+avatar: /assets/avatar/avatar.png
 
 #
 # Flags below are optional
